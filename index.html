@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Trafalgar — zamonaviy virtual tibbiy xizmatlar platformasi.">
+  <title>Trafalgar — Virtual Healthcare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-icon">T</span>
+      <span>Trafalgar</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Bosh sahifa</a>
+      <a href="#services">Xizmatlar</a>
+      <a href="#doctors">Shifokorlar</a>
+      <a href="#about">Biz haqimizda</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">SOG‘LIQ — ENG KATTA BOYLIK</span>
+        <h1>Virtual tibbiy yordam <span>siz uchun</span></h1>
+        <p>
+          Zamonaviy tibbiy xizmatlar endi yanada qulay.
+          Kerakli ma’lumotlarni toping, shifokorlar bilan
+          bog‘laning va sog‘lig‘ingizga e’tibor bering.
+        </p>
+        <a href="#services" class="primary-btn">
+          Xizmatlarni ko‘rish <span>→</span>
+        </a>
+
+        <div class="hero-stats">
+          <div><strong>24/7</strong><small>Onlayn kirish</small></div>
+          <div><strong>6+</strong><small>Asosiy xizmatlar</small></div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-glow"></div>
+        <div class="floating-card heart-card">
+          <span>♥</span>
+          <div><b>Sog‘liq</b><small>Doimo e’tiborda</small></div>
+        </div>
+
+        <img
+          src="https://illustrations.popsy.co/blue/medical.svg"
+          alt="Raqamli tibbiyot tasviri"
+          onerror="this.style.display='none';document.getElementById('fallbackArt').hidden=false"
+        >
+
+        <div id="fallbackArt" class="fallback-art" hidden>
+          <div class="medical-cross">✚</div>
+          <div class="medical-screen">
+            <div class="screen-top">Tibbiy ma’lumot</div>
+            <div class="pulse">⌁⌁⌁⌁⌁</div>
+            <div class="screen-line"></div>
+            <div class="screen-line short"></div>
+          </div>
+          <div class="doctor-emoji">🧑‍⚕️</div>
+        </div>
+
+        <div class="floating-card shield-card">
+          <span>✓</span>
+          <div><b>G‘amxo‘rlik</b><small>Siz uchun</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">BIZNING IMKONIYATLAR</span>
+        <h2>Bizning xizmatlar</h2>
+        <span class="heading-line"></span>
+        <p>
+          Sog‘lig‘ingiz haqida ma’lumot olish uchun kerakli
+          xizmatlarni bir joyda toping.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" id="doctors">
+          <div class="service-icon blue">⌕</div>
+          <h3>Shifokor qidirish</h3>
+          <p>Mutaxassislar haqida ma’lumot toping va o‘zingizga mosini tanlang.</p>
+          <button class="text-btn" data-service="Shifokor qidirish">Batafsil <span>→</span></button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon cyan">✚</div>
+          <h3>Onlayn dorixona</h3>
+          <p>Dorilar haqida ma’lumot va xavfsiz foydalanish bo‘yicha eslatmalar.</p>
+          <button class="text-btn" data-service="Onlayn dorixona">Batafsil <span>→</span></button>
+        </article>
+             <article class="service-card">
+          <div class="service-icon purple">▣</div>
+          <h3>Konsultatsiya</h3>
+          <p>Sog‘liq bilan bog‘liq savollaringizni yozib qoldiring.</p>
+          <button class="text-btn" data-service="Konsultatsiya">Batafsil <span>→</span></button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon orange">▤</div>
+          <h3>Tibbiy ma’lumotlar</h3>
+          <p>Foydali maqolalar va sog‘lom turmush bo‘yicha tavsiyalar.</p>
+          <button class="text-btn" data-service="Tibbiy ma’lumotlar">Batafsil <span>→</span></button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon pink">✚</div>
+          <h3>Tez yordam</h3>
+          <p>Shoshilinch holatlarda kerakli yordam raqamini toping.</p>
+          <button class="text-btn" data-service="Tez yordam">Batafsil <span>→</span></button>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon green">♡</div>
+          <h3>Sog‘liq kuzatuvi</h3>
+          <p>Kundalik holatingiz va foydali odatlaringizni qayd eting.</p>
+          <button class="text-btn" data-service="Sog‘liq kuzatuvi">Batafsil <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-visual">
+        <img
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+          alt="Shifokor tibbiy maslahat bermoqda"
+          loading="lazy"
+        >
+        <div class="image-caption">Sog‘lig‘ingiz biz uchun muhim</div>
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow">BIZ HAQIMIZDA</span>
+        <h2>Tibbiy ma’lumotlar endi yanada qulay</h2>
+        <span class="heading-line left"></span>
+        <p>
+          Trafalgar — sog‘liq bo‘yicha foydali ma’lumotlarni
+          topish va xizmatlardan foydalanishni osonlashtirish
+          uchun yaratilgan namuna platforma.
+        </p>
+        <a href="#contact" class="outline-btn">Biz bilan bog‘laning →</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading">
+        <span class="eyebrow">BIZ BILAN ALOQA</span>
+        <h2>Bizga xabar yuboring</h2>
+        <span class="heading-line"></span>
+        <p>Taklif yoki savolingiz bo‘lsa, quyidagi shaklni to‘ldiring.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <label for="name">Ismingiz</label>
+        <input id="name" name="name" placeholder="Ismingizni kiriting" required>
+
+        <label for="email">Elektron pochta</label>
+        <input id="email" name="email" type="email" placeholder="email@example.com" required>
+
+        <label for="message">Xabaringiz</label>
+        <textarea id="message" name="message" rows="4"
+          placeholder="Xabaringizni yozing..." required></textarea>
+
+        <button class="primary-btn" type="submit">Xabarni tekshirish →</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo">
+      <span class="logo-icon">T</span><span>Trafalgar</span>
+    </a>
+    <p>© <span id="year"></span> Trafalgar. Barcha huquqlar himoyalangan.</p>
+    <p class="disclaimer">Bu namuna sayt. U shifokor o‘rnini bosmaydi va haqiqiy tibbiy xizmat ko‘rsatmaydi.</p>
+  </footer>
+
+  <div class="modal" id="serviceModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true"
+      aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Yopish">×</button>
+      <div class="service-icon blue">✚</div>
+      <h2 id="modalTitle">Xizmat</h2>
+      <p id="modalText"></p>
+      <button class="primary-btn" id="modalOk">Tushunarli</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
